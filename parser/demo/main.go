@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"gaql/parser"
+	p "gaql/parser"
 	"io"
 	"log"
 	"os"
@@ -23,6 +23,6 @@ func main() {
 
 		sline := strings.Trim(string(line), "\n")
 		fmt.Printf("exp = %s\n", sline)
-		parser.ExpParse(parser.NewMExpLexer(sline))
+		p.GAQLParse(p.NewMGAQLLexer(sline, true))
 	}
 }

@@ -1,4 +1,4 @@
-cd ../../../
+cd ../../../../
 export GOPATH=`pwd`
 cd -
 
