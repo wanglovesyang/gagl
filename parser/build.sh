@@ -1,0 +1,1 @@
+go tool yacc -o gaql.go -p GAQL gaql.y
